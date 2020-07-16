@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" 
+    integrity="sha256-2XFplPlrFClt0bIdPgpz8H7ojnk10H69xRqd9+uTShA=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/utilities.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Our Blog</title>
+</head>
+<body id="Home">
+    <header class="hero blog">
+        <div id="navbar" class="navbar top">
+            <h1 class="logo">
+                <span class="text-primary"><i class="fas fa-book-open"></i> Edge</span>Ledger
+            </h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#about">About</a></li>
+                    <li><a href="index.html#cases">Cases</a></li>
+                    <li><a href="index.html#blog">Blog</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="content">
+            <h1>Post One</h1>
+            
+        </div>
+    </header>
+
+    <main>
+        <section class="post">
+            <h2>Blog Post One</h2>
+            <p class="meta">
+                <i class="fas fa-user"></i> Posted by <strong>John Lang</strong> | April 19 |
+            </p>
+            <img src="images/blog/blog1.jpg"
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                Impedit vel odio optio doloremque voluptate neque dolorum voluptatibus 
+                nesciunt provident dolores.</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut nisi nesciunt voluptates 
+                    quia et quod temporibus corporis at sit eos eum fuga, magnam obcaecati ipsam aliquid iure, 
+                    deserunt iste animi.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla possimus corporis esse aspernatur, non consequatur quae quo, 
+                        illum maxime repellendus, ullam natus perspiciatis at totam perferendis doloremque nihil iusto vel molestias sint voluptate minima 
+                        id a. Animi veritatis laborum recusandae doloremque porro eius, iure quisquam corporis provident laboriosam non praesentium id vero, 
+                        voluptate debitis numquam quos aut rerum beatae repellendus error eligendi officiis iusto obcaecati. Perspiciatis ducimus pariatur, 
+                        consequuntur mollitia ut quia? Dicta illum, eaque nam hic architecto rem labore officia nesciunt? Dolorem laudantium, aperiam at 
+                        quisquam, 
+                        cum nostrum nemo a recusandae consequuntur minus esse. Voluptatibus id autem odit quam!</p>
+        </section>
+    </main>
+    <footer class="footer bg-dark">
+        <div class="social">
+            <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+            <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+            <a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="#"><i class="fab fa-linkedin fa-2x"></i></a>
+        </div>
+        <p>Copyright &copy; 2020 - EdgeLedger</p>
+    </footer>
+
+    <script>
+        const navbar = document.getElementById('navbar');
+        let scrolled = false;
+
+        window.onscroll = function() {
+            if(window.pageYOffset > 100) {
+                navbar.classList.remove('top');
+                if(!scrolled) {
+                    navbar.style.transform = 'translateY(-70px)';
+                }
+                setTimeout(function() {
+                    navbar.style.transform = 'translateY(0)';
+                    scrolled = true;
+                }, 200);
+            } else { 
+                navbar.classList.add('top');
+                scrolled = false;
+            }
+        }
+    </script>
+</body>
+</html>
